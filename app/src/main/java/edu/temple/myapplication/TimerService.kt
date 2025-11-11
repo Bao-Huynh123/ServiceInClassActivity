@@ -78,7 +78,7 @@ class TimerService : Service() {
     fun pause () {
         if (::t.isInitialized) {
             paused = !paused
-            isRunning = !paused
+            isRunning = !isRunning
         }
     }
 
